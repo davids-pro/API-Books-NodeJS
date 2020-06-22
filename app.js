@@ -1,20 +1,21 @@
 const express = require('express');
-const path = require('path');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+
+const uri = 'mongodb+srv://erkul:oW0xJeDg3u7pphOB@dpscalculatordb-amnaw.mongodb.net/BOOKS?retryWrites=true&w=majority';
 
 const cors = require('cors');
 
 mongoose
-  .connect('mongodb+srv://erkul:Gyfc1089ZNB9Vthp@dpscalculatordb-amnaw.mongodb.net/BOOKS?retryWrites=true&w=majority', {
+  .connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
   .then(() => {
     console.log('Connected');
   })
-  .catch((err) => {
-    console.log(err);
+  .catch(() => {
+    console.log('Erreur de connexion');
   });
 
 const app = express();
