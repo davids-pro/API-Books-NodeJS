@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 mongoose
-  .connect('mongodb+srv://erkul:r0peR56VZdXA0tpb@calculator-qvphp.gcp.mongodb.net/BOOKS?retryWrites=true&w=majority', {
+  .connect('mongodb+srv://erkul:Gyfc1089ZNB9Vthp@dpscalculatordb-amnaw.mongodb.net/BOOKS?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
