@@ -12,10 +12,10 @@ mongoose
     useUnifiedTopology: true
   })
   .then(() => {
-    console.log('Connected');
+    console.log('** MongoDB connexion success **');
   })
   .catch(() => {
-    console.log('Connexion error');
+    console.log('** MongoDB connexion error **');
   });
 
 const app = express();
