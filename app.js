@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-const uri = 'mongodb+srv://erkul:211205Aub3rg1n3s:.@dpscalculatordb-amnaw.mongodb.net/BOOKS?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://erkul:252G9QL8JlmPkZZr:.@dpscalculatordb-amnaw.mongodb.net/BOOKS?retryWrites=true&w=majority';
 
 const cors = require('cors');
 
@@ -14,8 +14,9 @@ mongoose
   .then(() => {
     console.log('Connected');
   })
-  .catch(() => {
+  .catch((err) => {
     console.log('Erreur de connexion');
+    console.log(err);
   });
 
 const app = express();
