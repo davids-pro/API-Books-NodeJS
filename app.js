@@ -14,9 +14,8 @@ mongoose
   .then(() => {
     console.log('Connected');
   })
-  .catch((err) => {
+  .catch(() => {
     console.log('Erreur de connexion');
-    console.log(err);
   });
 
 const app = express();
