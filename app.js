@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-const uri = 'mongodb+srv://erkul:252G9QL8JlmPkZZr:.@dpscalculatordb-amnaw.mongodb.net/BOOKS?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://erkul:252G9QL8JlmPkZZr@dpscalculatordb-amnaw.mongodb.net/BOOKS?retryWrites=true&w=majority';
 
 const cors = require('cors');
 
