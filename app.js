@@ -14,8 +14,7 @@ mongoose
   .then(() => console.log('** MongoDB connexion success **'))
   .catch((err) => {
     console.log('** MongoDB connexion error **');
-    console.log('** Details: **');
-    console.log(err);
+    console.log('** ' + err + ' **');
   });
 
 const app = express();
